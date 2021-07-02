@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "XCTest_Gherkin",
+        "repositoryURL": "https://github.com/tomleightonstars/XCTest-Gherkin.git",
+        "state": {
+          "branch": "master",
+          "revision": "21a389bf54a89282601427fb51457f9dac6e2f4d",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
