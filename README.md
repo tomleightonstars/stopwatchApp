@@ -23,6 +23,7 @@ The Page files contain the element definitions and any relevant functions.
 1. Implement the 'Stop' button element definition and replace the current implementation in the steps
 1. Replace all `XCTAssert` statements with Nimble expect statements
 1. Give your Nimble expect statements some helpful fail messages
+1. Add the 'Reset' and 'Lap' button elements and add some steps/tests that use them
 1. Adapt the step definitions to use regex for the button names
 1. See what else you can do!
 
