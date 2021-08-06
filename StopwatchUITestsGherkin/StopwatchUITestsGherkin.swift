@@ -13,9 +13,6 @@ import XCTest_Gherkin
 let app = XCUIApplication()
 
 class TestBase: NativeTestCase {
-    func test_thisIsAProperlyDefinedTest() {
-        XCTAssert(1==1)
-    }
     
     public override class func setUp() {
         // beforeAll
