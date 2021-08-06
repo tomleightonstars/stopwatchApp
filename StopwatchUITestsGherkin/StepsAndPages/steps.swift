@@ -1,16 +1,17 @@
 import Foundation
 import XCTest
 import XCTest_Gherkin
+import Nimble
 
 class NavigationSteps: StepDefiner {
     override func defineSteps() {
 
         step("the start button is displayed") {
-            XCTAssert(app.buttons["Start"].exists == true)
+            XCTAssert(Buttons.start.exists == true)
         }
 
         step("I select the start button") {
-            app.buttons["Start"].tap()
+            Buttons.start.tap()
         }
 
         step("the stop button is displayed") {
@@ -18,7 +19,7 @@ class NavigationSteps: StepDefiner {
         }
 
         step("the start button is not displayed") {
-            XCTAssert(app.buttons["Start"].exists == false)
+            XCTAssert(Buttons.start.exists == false)
         }
 
         step("the stop button is not displayed") {

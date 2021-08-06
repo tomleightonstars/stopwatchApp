@@ -17,6 +17,8 @@
 		3C4AE4B82684D4300066D48A /* XCTest_Gherkin in Frameworks */ = {isa = PBXBuildFile; productRef = 3C4AE4B72684D4300066D48A /* XCTest_Gherkin */; };
 		3C4AE4BA2684D47D0066D48A /* feature.feature in Resources */ = {isa = PBXBuildFile; fileRef = 3C4AE4B92684D47D0066D48A /* feature.feature */; };
 		3C4AE4BC2684D48D0066D48A /* steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AE4BB2684D48D0066D48A /* steps.swift */; };
+		3CCAE14026BD2E1900D1C8B9 /* pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAE13F26BD2E1900D1C8B9 /* pages.swift */; };
+		3CCAE14326BD305400D1C8B9 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 3CCAE14226BD305400D1C8B9 /* Nimble */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 		3C4AE4B02684D3E60066D48A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C4AE4B92684D47D0066D48A /* feature.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = feature.feature; sourceTree = "<group>"; };
 		3C4AE4BB2684D48D0066D48A /* steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = steps.swift; sourceTree = "<group>"; };
+		3CCAE13F26BD2E1900D1C8B9 /* pages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C4AE4B82684D4300066D48A /* XCTest_Gherkin in Frameworks */,
+				3CCAE14326BD305400D1C8B9 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +103,29 @@
 		3C4AE4AD2684D3E50066D48A /* StopwatchUITestsGherkin */ = {
 			isa = PBXGroup;
 			children = (
+				3CCAE13E26BD2DEB00D1C8B9 /* StepsAndPages */,
+				3CCAE13D26BD2DD900D1C8B9 /* Features */,
 				3C4AE4AE2684D3E60066D48A /* StopwatchUITestsGherkin.swift */,
 				3C4AE4B02684D3E60066D48A /* Info.plist */,
-				3C4AE4B92684D47D0066D48A /* feature.feature */,
-				3C4AE4BB2684D48D0066D48A /* steps.swift */,
 			);
 			path = StopwatchUITestsGherkin;
+			sourceTree = "<group>";
+		};
+		3CCAE13D26BD2DD900D1C8B9 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3C4AE4B92684D47D0066D48A /* feature.feature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3CCAE13E26BD2DEB00D1C8B9 /* StepsAndPages */ = {
+			isa = PBXGroup;
+			children = (
+				3C4AE4BB2684D48D0066D48A /* steps.swift */,
+				3CCAE13F26BD2E1900D1C8B9 /* pages.swift */,
+			);
+			path = StepsAndPages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +164,7 @@
 			name = StopwatchUITestsGherkin;
 			packageProductDependencies = (
 				3C4AE4B72684D4300066D48A /* XCTest_Gherkin */,
+				3CCAE14226BD305400D1C8B9 /* Nimble */,
 			);
 			productName = StopwatchUITestsGherkin;
 			productReference = 3C4AE4AC2684D3E50066D48A /* StopwatchUITestsGherkin.xctest */;
@@ -179,6 +201,7 @@
 			mainGroup = 197BEE0C1C76E410005AD5E2;
 			packageReferences = (
 				3C4AE4B62684D4300066D48A /* XCRemoteSwiftPackageReference "XCTest-Gherkin" */,
+				3CCAE14126BD305400D1C8B9 /* XCRemoteSwiftPackageReference "Nimble" */,
 			);
 			productRefGroup = 197BEE161C76E410005AD5E2 /* Products */;
 			projectDirPath = "";
@@ -226,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCAE14026BD2E1900D1C8B9 /* pages.swift in Sources */,
 				3C4AE4AF2684D3E60066D48A /* StopwatchUITestsGherkin.swift in Sources */,
 				3C4AE4BC2684D48D0066D48A /* steps.swift in Sources */,
 			);
@@ -378,7 +402,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leighton.tom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leighton.tommmmm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -394,7 +418,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leighton.tom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leighton.tommmmm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -422,7 +446,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tom.leighton.StopwatchUITestsGherkin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leighton.tommmmm.StopwatchUITestsGherkin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
@@ -452,7 +476,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tom.leighton.StopwatchUITestsGherkin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leighton.tommmmm.StopwatchUITestsGherkin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,6 +525,14 @@
 				kind = branch;
 			};
 		};
+		3CCAE14126BD305400D1C8B9 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -508,6 +540,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3C4AE4B62684D4300066D48A /* XCRemoteSwiftPackageReference "XCTest-Gherkin" */;
 			productName = XCTest_Gherkin;
+		};
+		3CCAE14226BD305400D1C8B9 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CCAE14126BD305400D1C8B9 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
