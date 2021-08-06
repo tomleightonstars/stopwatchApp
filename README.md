@@ -26,6 +26,7 @@ The Page files contain the element definitions and any relevant functions.
 1. Add the 'Reset' and 'Lap' button elements and add some steps/tests that use them
 1. Adapt the step definitions to use regex for the button names
 1. See what else you can do!
+1. Commit your changes and create a PR and get another SEIT to take a look
 
 
 
