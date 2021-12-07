@@ -1,4 +1,4 @@
-Feature: Add outcomes to bet slip
+Feature: Scenario with outline - Add outcomes to bet slip
 
     Scenario Outline: Tests that are an outline
         Given the <startOrStop1> button is displayed
