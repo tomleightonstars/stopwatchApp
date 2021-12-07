@@ -15,8 +15,9 @@
 		197BEE2D1C798B47005AD5E2 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197BEE2C1C798B47005AD5E2 /* Stopwatch.swift */; };
 		3C4AE4AF2684D3E60066D48A /* StopwatchUITestsGherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AE4AE2684D3E60066D48A /* StopwatchUITestsGherkin.swift */; };
 		3C4AE4B82684D4300066D48A /* XCTest_Gherkin in Frameworks */ = {isa = PBXBuildFile; productRef = 3C4AE4B72684D4300066D48A /* XCTest_Gherkin */; };
-		3C4AE4BA2684D47D0066D48A /* feature.feature in Resources */ = {isa = PBXBuildFile; fileRef = 3C4AE4B92684D47D0066D48A /* feature.feature */; };
 		3C4AE4BC2684D48D0066D48A /* steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AE4BB2684D48D0066D48A /* steps.swift */; };
+		3C645F0E275FA95B00D5A69C /* Simple.feature in Resources */ = {isa = PBXBuildFile; fileRef = 3C645F0D275FA95B00D5A69C /* Simple.feature */; };
+		3C645F11275FA96500D5A69C /* Complex.feature in Resources */ = {isa = PBXBuildFile; fileRef = 3C645F10275FA96500D5A69C /* Complex.feature */; };
 		3CCAE14026BD2E1900D1C8B9 /* pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCAE13F26BD2E1900D1C8B9 /* pages.swift */; };
 		3CCAE14326BD305400D1C8B9 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 3CCAE14226BD305400D1C8B9 /* Nimble */; };
 /* End PBXBuildFile section */
@@ -43,8 +44,9 @@
 		3C4AE4AC2684D3E50066D48A /* StopwatchUITestsGherkin.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchUITestsGherkin.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4AE4AE2684D3E60066D48A /* StopwatchUITestsGherkin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchUITestsGherkin.swift; sourceTree = "<group>"; };
 		3C4AE4B02684D3E60066D48A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C4AE4B92684D47D0066D48A /* feature.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = feature.feature; sourceTree = "<group>"; };
 		3C4AE4BB2684D48D0066D48A /* steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = steps.swift; sourceTree = "<group>"; };
+		3C645F0D275FA95B00D5A69C /* Simple.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Simple.feature; sourceTree = "<group>"; };
+		3C645F10275FA96500D5A69C /* Complex.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Complex.feature; sourceTree = "<group>"; };
 		3CCAE13F26BD2E1900D1C8B9 /* pages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,10 +113,19 @@
 			path = StopwatchUITestsGherkin;
 			sourceTree = "<group>";
 		};
+		3C645F0F275FA96500D5A69C /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				3C645F10275FA96500D5A69C /* Complex.feature */,
+			);
+			path = Complex;
+			sourceTree = "<group>";
+		};
 		3CCAE13D26BD2DD900D1C8B9 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				3C4AE4B92684D47D0066D48A /* feature.feature */,
+				3C645F0F275FA96500D5A69C /* Complex */,
+				3C645F0D275FA95B00D5A69C /* Simple.feature */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -228,7 +239,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C4AE4BA2684D47D0066D48A /* feature.feature in Resources */,
+				3C645F0E275FA95B00D5A69C /* Simple.feature in Resources */,
+				3C645F11275FA96500D5A69C /* Complex.feature in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

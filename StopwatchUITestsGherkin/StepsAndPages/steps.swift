@@ -14,6 +14,10 @@ class NavigationSteps: StepDefiner {
             Buttons.start.tap()
         }
 
+        step("I select the stop button") {
+            app.buttons["Stop"].tap()
+        }
+
         step("the stop button is displayed") {
             XCTAssert(app.buttons["Stop"].exists == true)
         }
